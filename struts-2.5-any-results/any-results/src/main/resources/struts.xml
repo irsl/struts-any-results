@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+		"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+		"http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+
+	<package name="basicstruts2" extends="struts-default" strict-method-invocation="false">
+			
+		<default-interceptor-ref name="defaultStack" />
+
+		<action name="index" class="org.apache.struts.helloworld.action.MainAction" method="execute">
+            <result name="login">/login.jsp</result>
+            <result name="confidential">/confidential.jsp</result>
+		</action>
+
+	</package>
+
+</struts>
