@@ -6,10 +6,7 @@ This is an example project that demonstrates why Dynamic Method Invocation with 
 
 Execute `mvn jetty:run` in the `any-results` directory. You can access the website then at:
 
-```
 http://localhost:8080/any-results/
-```
-
 
 ### Exploitation:
 
